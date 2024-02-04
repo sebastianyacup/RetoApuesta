@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="form-group">
+    <label for="operador">Operador</label>
+    <input type="text" class="form-control" id="operador" [(ngModel)]="operador">
+  </div>
+  <div class="form-group">
+    <label for="vendedor">Vendedor</label>
+    <input type="text" class="form-control" id="vendedor" [(ngModel)]="vendedor">
+  </div>
+  <button class="btn btn-primary mr-2" (click)="getPorOperador()">Buscar por Operador</button>
+  <button class="btn btn-primary" (click)="getPorVendedor()">Buscar por Vendedor</button>
+</div>
+
+<div class="container mt-3" *ngIf="VentaRecargasPorOperador.length > 0">
+  <h3>Los registros que se encontraron por operador son:</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Operador</th>
+        <th>Vendedor</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let venta of VentaRecargasPorOperador">
+        <td>{{ venta.id }}</td>
+        <td>{{ venta.operador }}</td>
+        <td>{{ venta.vendedor }}</td>
+        <td>{{ venta.valor }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container mt-3" *ngIf="VentaRecargasPorVendedor.length > 0">
+  <h3>Los registros que se encontraron por vendedor son:</h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Operador</th>
+        <th>Vendedor</th>
+        <th>Valor</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let venta of VentaRecargasPorVendedor">
+        <td>{{ venta.id }}</td>
+        <td>{{ venta.operador }}</td>
+        <td>{{ venta.vendedor }}</td>
+        <td>{{ venta.valor }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

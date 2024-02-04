@@ -1,0 +1,35 @@
+<div style="text-align: center;">
+  <h1>
+    BIENVENIDO AL PORTAL DE RECARGAS
+  </h1>
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Uffmovillogo.svg/1920px-Uffmovillogo.svg.png" alt="uff logo" style="width: 100px; margin: 10px;">
+    <img src="https://seeklogo.com/images/T/tigo-logo-A57C4EF267-seeklogo.com.png" alt="Tigo logo" style="width: 100px; margin: 10px;">
+    <img src="https://www.eltiempo.com/files/article_main/uploads/2022/02/04/61fd473291d5c.jpeg" alt="Comcel logo" style="width: 100px; margin: 10px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Logo_Movistar.svg/611px-Logo_Movistar.svg.png" alt="Movistar logo" style="width: 100px; margin: 10px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/WOM_logo.png/599px-WOM_logo.png" alt="Wom logo" style="width: 100px; margin: 10px;">
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-md-6">
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-md-6">
+      <button class="btn btn-primary btn-block" (click)="registrarVenta()">Registrar Venta</button>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-md-6">
+      <button class="btn btn-info btn-block" (click)="buscarTodasLasVentas()">Buscar Todas las Ventas</button>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+    <div class="col-md-6">
+      <button class="btn btn-secondary btn-block" (click)="buscarPorOperador()">Buscar por Operador o  Persona</button>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

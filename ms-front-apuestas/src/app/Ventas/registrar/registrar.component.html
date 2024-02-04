@@ -1,0 +1,25 @@
+<div class="container col-md-6"></div>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Registrar Ventas</h3>
+        </div>
+        <div class="card-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="">OPERADOR</label>
+                    <input type="text" class="form-control"  [(ngModel)]="VentaRecarga.operador" name="operador">
+                </div>
+                <div class="form-group">
+                    <label for="">VENDEDOR</label>
+                    <input type="text" class="form-control"  [(ngModel)]="VentaRecarga.vendedor" name="vendedor">
+                </div>
+                <div class="form-group">
+                    <label for="">VALOR</label>
+                    <input type="text" class="form-control"  [(ngModel)]="VentaRecarga.valor" name="valor">
+                </div>
+                <button (click)="Guardar()" class="btn btn-danger">Registrar Venta</button>
+            </form>
+        </div>
+    </div>
+</div>
