@@ -3,14 +3,21 @@
  Este proyecto es un gestor de ventas que consta de un frontend desarrollado con Angular 13.0.1 y un backend desarrollado en Java 11 utilizando PostgreSQL como base de datos relacional.
 
 ## Requisitos
-- Angular 13.0.1
+- Angular 13.0.1 
 - Java 11
 - PostgreSQL
+_____________
+### 💡 **NOTA**
 
+En este proyecto, se incluye un vídeo titulado **'Tutorial del reto'**, el cual muestra en detalle el funcionamiento completo, así como también proporciona una guía paso a paso para su utilización. 
 
+Para ver el vídeo, puedes hacer clic [aquí](https://drive.google.com/file/d/1NbAHJP7mBVrGHqCgAgLL5FXZF8R0HpTs/view?usp=sharing) o simplemente sigue este enlace:
+[Ver vídeo](https://drive.google.com/file/d/1NbAHJP7mBVrGHqCgAgLL5FXZF8R0HpTs/view?usp=sharing)
+
+__________
 ## Configuración y Ejecución del Proyecto 
 
-### Configuración de la Base de Datos
+#### 1. Configuración de la Base de Datos en Ubuntu
 
 ```bash
 sudo apt update
@@ -65,4 +72,3 @@ npm install
 ng serve -o
 ```
 -Esto abrirá automáticamente el navegador y cargar la aplicación.
-
