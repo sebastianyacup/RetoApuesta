@@ -1,0 +1,37 @@
+@startuml
+
+interface VentaRecargaRepository {
+    + findAll(): List<VentaRecarga>
+    + findByOperador(operador: String): List<VentaRecarga>
+    + findByVendedor(vendedor: String): List<VentaRecarga>
+    + save(ventaRecarga: VentaRecarga): VentaRecarga
+}
+
+interface VentaRecargaService {
+    + listar(): List<VentaRecarga>
+    + findByOperador(operador: String): List<VentaRecarga>
+    + findByVendedor(vendedor: String): List<VentaRecarga>
+    + Venta(ventaRecarga: VentaRecarga): VentaRecarga
+}
+
+class VentaRecargaServiceImpl {
+    - ventaRecargaRepository: VentaRecargaRepository
+    + listar(): List<VentaRecarga>
+    + findByOperador(operador: String): List<VentaRecarga>
+    + findByVendedor(vendedor: String): List<VentaRecarga>
+    + Venta(ventaRecarga: VentaRecarga): VentaRecarga
+}
+
+class VentaRecargaController {
+    - ventaRecargaService: VentaRecargaService
+    + listar(): List<VentaRecarga>
+    + agregar(ventaRecarga: VentaRecarga): VentaRecarga
+    + listarPorOperador(operador: String): List<VentaRecarga>
+    + listarPorVendedor(vendedor: String): List<VentaRecarga>
+}
+
+VentaRecargaService --> VentaRecargaServiceImpl
+VentaRecargaServiceImpl --> VentaRecargaRepository
+VentaRecargaController --> VentaRecargaService
+
+@enduml
