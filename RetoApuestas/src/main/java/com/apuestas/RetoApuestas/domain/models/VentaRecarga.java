@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 @Data
 @Builder
@@ -28,4 +29,8 @@ public class VentaRecarga {
 
 	@Column(name = "valor")
 	private BigDecimal valor;
+
+	@Column(name = "fecha")
+	private LocalDateTime fecha;
+
 }

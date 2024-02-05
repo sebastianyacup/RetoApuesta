@@ -7,18 +7,20 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>OPERADOR</th>
-                        <th>VENDEDOR</th>
-                        <th>VALOR</th>
+                        <th style="text-align: center;">ID</th>
+                        <th style="text-align: center;">OPERADOR</th>
+                        <th style="text-align: center;">VENDEDOR</th>
+                        <th style="text-align: center;">VALOR - COP</th>
+                        <th style="text-align: center;">FECHA</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let VentaRecarga of VentaRecargas" class="text-center">
-                        <td>{{VentaRecarga.id}}</td>
-                        <td>{{VentaRecarga.operador}}</td>
-                        <td>{{VentaRecarga.vendedor}}</td>
-                        <td>{{VentaRecarga.valor}}</td>
+                    <tr *ngFor="let VentaRecarga of VentaRecargas">
+                        <td style="text-align: center;">{{ VentaRecarga.id }}</td>
+                        <td style="text-align: center;">{{ VentaRecarga.operador }}</td>
+                        <td style="text-align: center;">{{ VentaRecarga.vendedor }}</td>
+                        <td style="text-align: center;">{{ formatValue(VentaRecarga.valor) }}</td>
+                        <td style="text-align: center;">{{ VentaRecarga.fecha }}</td>
                     </tr>
                 </tbody>
             </table>

@@ -18,6 +18,11 @@ export class OperadorxpersonaComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  formatValue(value: number): string {
+    const formattedValue = new Intl.NumberFormat('es-CO', { style: 'currency', currency: 'COP' }).format(value);
+    return formattedValue.replace('COP', 'cop');
+  }
+
   getPorOperador(): void {
     this.service.getPorOperador(this.operador).subscribe(
       (data) => {

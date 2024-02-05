@@ -15,11 +15,16 @@ export class RegistrarComponent implements OnInit {
   }
   VentaRecarga:VentaRecarga = new VentaRecarga();
   Guardar(){
+    if (isNaN(this.VentaRecarga.valor)) {
+      alert("Por favor, ingrese un valor numérico en el campo Valor.");
+      return; 
+    }
+    
     this.service.RegistrarVenta(this.VentaRecarga)
     .subscribe(data => {
-      alert("La venta se realizo con exito  ....!!"   +  this.VentaRecarga.operador + " "+ this.VentaRecarga.valor + " " + this.VentaRecarga.vendedor)
+      alert("La venta se realizó con éxito: " + this.VentaRecarga.operador + " " + this.VentaRecarga.valor + " " + this.VentaRecarga.vendedor);
       this.router.navigate(["listar"]);
-    })
+    });
   }
-
 }
+

@@ -19,7 +19,8 @@
         <th>ID</th>
         <th>Operador</th>
         <th>Vendedor</th>
-        <th>Valor</th>
+        <th>Valor - COP</th>
+        <th>Fecha</th>
       </tr>
     </thead>
     <tbody>
@@ -27,7 +28,8 @@
         <td>{{ venta.id }}</td>
         <td>{{ venta.operador }}</td>
         <td>{{ venta.vendedor }}</td>
-        <td>{{ venta.valor }}</td>
+        <td>{{ formatValue(venta.valor) }}</td>
+        <td>{{ venta.fecha }}</td>
       </tr>
     </tbody>
   </table>
@@ -41,7 +43,8 @@
         <th>ID</th>
         <th>Operador</th>
         <th>Vendedor</th>
-        <th>Valor</th>
+        <th>Valor - COP</th>
+        <th>Fecha</th>
       </tr>
     </thead>
     <tbody>
@@ -49,7 +52,8 @@
         <td>{{ venta.id }}</td>
         <td>{{ venta.operador }}</td>
         <td>{{ venta.vendedor }}</td>
-        <td>{{ venta.valor }}</td>
+        <td>{{ formatValue(venta.valor) }}</td>
+        <td>{{ venta.fecha }}</td>
       </tr>
     </tbody>
   </table>

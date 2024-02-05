@@ -23,6 +23,7 @@ public class VentaRecargaController {
 			System.out.println("Operador: " + venta.getOperador());
 			System.out.println("Vendedor: " + venta.getVendedor());
 			System.out.println("Valor: " + venta.getValor());
+			System.out.println("venta = " + venta.getFecha());
 		}
 		return ventas;
 	}

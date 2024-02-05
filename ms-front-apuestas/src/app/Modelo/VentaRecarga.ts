@@ -1,6 +1,7 @@
-export class VentaRecarga{
+export class VentaRecarga {
     id!: number;
-    operador!: String;
-    vendedor!: String;
-    valor!: String;
+    operador!: string;
+    vendedor!: string;
+    valor!: number;
+    fecha!: string; 
 }

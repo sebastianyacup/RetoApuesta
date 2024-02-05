@@ -8,15 +8,22 @@
             <form action="">
                 <div class="form-group">
                     <label for="">OPERADOR</label>
-                    <input type="text" class="form-control"  [(ngModel)]="VentaRecarga.operador" name="operador">
+                    <select class="form-control" [(ngModel)]="VentaRecarga.operador" name="operador">
+                        <option value="Claro">Claro</option>
+                        <option value="Movistar">Movistar</option>
+                        <option value="WOM">WOM</option>
+                        <option value="Tigo">Tigo</option>
+                        <option value="Uff!">Uff!</option>
+
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="">VENDEDOR</label>
-                    <input type="text" class="form-control"  [(ngModel)]="VentaRecarga.vendedor" name="vendedor">
+                    <input type="text" class="form-control" [(ngModel)]="VentaRecarga.vendedor" name="vendedor">
                 </div>
                 <div class="form-group">
                     <label for="">VALOR</label>
-                    <input type="text" class="form-control"  [(ngModel)]="VentaRecarga.valor" name="valor">
+                    <input type="text" class="form-control" [(ngModel)]="VentaRecarga.valor" name="valor">
                 </div>
                 <button (click)="Guardar()" class="btn btn-danger">Registrar Venta</button>
             </form>
