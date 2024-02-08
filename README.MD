@@ -8,7 +8,6 @@
 - PostgreSQL
 - npm 9.5.0
 - Node: 18.15.0
-Foto de las depedencias utilizadas en Angular 13
 _____________
 ### 💡 **NOTA**
 
@@ -81,7 +80,7 @@ ____________________________
 ### 💡 **NOTA DEPENDENCIAS ANGULAR**
 
 En este proyecto se utilizaron las siguientes versiones de Angular, Node y npm. Por favor, configure las mismas dependencias, ya que de lo contrario podrían surgir fallos.
-
+```bash
      _                      _                 ____ _     ___
     / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
    / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
@@ -109,6 +108,6 @@ Package                         Version
 @schematics/angular             13.2.6
 rxjs                            7.5.7
 typescript                      4.5.5
+```
 
-Por favor, configure las mismas dependencias, ya que de lo contrario podrían surgir fallos. 
 _________________
