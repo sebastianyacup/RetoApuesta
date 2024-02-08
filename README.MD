@@ -3,9 +3,12 @@
  Este proyecto es un gestor de ventas que consta de un frontend desarrollado con Angular 13.0.1 y un backend desarrollado en Java 11 utilizando PostgreSQL como base de datos relacional.
 
 ## Requisitos
-- Angular 13.0.1 
+- Angular 13.2.7
 - Java 11
 - PostgreSQL
+- npm 9.5.0
+- Node: 18.15.0
+Foto de las depedencias utilizadas en Angular 13
 _____________
 ### 💡 **NOTA**
 
@@ -72,3 +75,40 @@ npm install
 ng serve -o
 ```
 -Esto abrirá automáticamente el navegador y cargar la aplicación.
+
+____________________________
+
+### 💡 **NOTA DEPENDENCIAS ANGULAR**
+
+En este proyecto se utilizaron las siguientes versiones de Angular, Node y npm. Por favor, configure las mismas dependencias, ya que de lo contrario podrían surgir fallos.
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 13.2.6
+Node: 18.15.0 
+Package Manager: npm 9.5.0
+OS: win32 x64
+
+Angular: 13.2.7
+... animations, common, compiler, compiler-cli, core, forms
+... platform-browser, platform-browser-dynamic, router
+
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1302.6
+@angular-devkit/build-angular   13.2.6
+@angular-devkit/core            13.2.6
+@angular-devkit/schematics      13.2.6
+@angular/cli                    13.2.6
+@schematics/angular             13.2.6
+rxjs                            7.5.7
+typescript                      4.5.5
+
+Por favor, configure las mismas dependencias, ya que de lo contrario podrían surgir fallos. 
+_________________
