@@ -71,7 +71,7 @@ spring.datasource.driver-class-name=org.postgresql.Driver
 
 ## Ejecucion del Backend (Java)
 
-- Antes de ejecutar el backend, asegúrate de que la conexión con la base de datos sea exitosa. Luego, procede a compilar el backend. Para ello, navega hasta la carpeta del proyecto backend y ejecuta el siguiente comando
+- Para ejecutar el backend, primero asegúrate de que la conexión con la base de datos sea exitosa. Después, procede a compilar el backend. Para ello, navega hasta la carpeta del proyecto backend y ejecuta el siguiente comando:
 ```bash
 ./gradlew build
 ```
