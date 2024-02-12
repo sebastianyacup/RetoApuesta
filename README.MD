@@ -52,10 +52,26 @@ CREATE TABLE registro_ventas (
 ```bash
 \q
 ```
+### Ejecución del Proyecto
+
+Antes de ejecutar el backend, asegúrate de que la base de datos esté encendida. Si la base de datos no está activa, el backend no podrá conectarse correctamente.
+
+Verifica que la dirección IP configurada en el archivo `application.properties` coincida con la dirección IP de tu base de datos. La configuración predeterminada puede que necesite ajustes para adaptarse a tu entorno.
+
+Una vez que la base de datos esté encendida y hayas validado esto, puedes proceder a ejecutar el backend. Recuerda revisar el archivo `application.properties` que se muestra a continuación:
+
+```bash
+
+spring.jpa.show-sql=true
+spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+spring.datasource.username=postgres
+spring.datasource.password=1234
+spring.datasource.driver-class-name=org.postgresql.Driver
+```
 
 ## Ejecucion del Backend (Java)
 
-- Para ejecutar el backend, primero debes compilarlo. Navega hasta la carpeta del proyecto backend y ejecuta el siguiente comando:
+- Antes de ejecutar el backend, asegúrate de que la conexión con la base de datos sea exitosa. Luego, procede a compilar el backend. Para ello, navega hasta la carpeta del proyecto backend y ejecuta el siguiente comando
 ```bash
 ./gradlew build
 ```
